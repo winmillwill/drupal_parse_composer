@@ -102,7 +102,7 @@ class ComposerPackageConvert {
             }
         }
         foreach($infoFiles as $infoFile) {
-            $info = drupal_parse_info_file($infoFile->getPathName());
+            $info = \drupal_parse_info_file($infoFile->getPathName());
             if (isset($info['package']) && $info['package'] !== 'Testing') {
                 $deps = isset($info['dependencies']) ? $info['dependencies'] : [];
                 foreach ($deps as $dep) {
