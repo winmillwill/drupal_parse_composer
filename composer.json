@@ -40,5 +40,5 @@
     "autoload": {
         "psr-4": { "Drupal\\ParseComposer\\": "src/" }
     },
-    "bin": ['bin/drupal-packages']
+    "bin": ["bin/drupal-packages"]
 }
