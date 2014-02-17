@@ -2,13 +2,11 @@
 
 namespace Drupal\ParseComposer\Parser;
 
-use Drupal\PackagistBundle\Parser\Release;
 use Composer\Package\Package;
 use Composer\Package\Loader\ArrayLoader;
 use Composer\Json\JsonFile;
 use Composer\Package\Version\VersionParser;
 use Composer\Package\Link;
-use Drupal\PackagistBundle\Parser\HttpClient;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Filesystem\Filesystem;
 
