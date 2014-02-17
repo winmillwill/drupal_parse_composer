@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\PackagistBundle\Parser;
+namespace Drupal\ParseComposer\Parser;
 
 use Drupal\PackagistBundle\Parser\Release;
 use Composer\Package\Package;
