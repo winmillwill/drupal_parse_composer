@@ -24,7 +24,7 @@
             "type": "tar"
           },
           "autoload": {
-            "files": ["includes/bootstrap.inc"]
+            "files": ["includes/bootstrap.inc", "includes/common.inc"]
           }
         }
       }

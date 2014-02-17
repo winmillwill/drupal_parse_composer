@@ -65,10 +65,12 @@ class ComposerPackageConvert {
         $package->setDistUrl($release->getDownload());
         $package->setDistReference($release->getReference());
 
+        $temp = tempnam(sys_get_temp_dir(), $name);
         file_put_contents(
-            $tmp = tempnam(sys_get_temp_dir(), $name).'.tar.gz',
+            $tmp = $temp.'.tar.gz',
             HttpClient::goGet($release->getDownload())
         );
+        unlink($temp);
         $archive = new \PharData($tmp);
         $dir = tempnam(sys_get_temp_dir(), "{$name}_dir");
         if (file_exists($dir) && unlink($dir) && mkdir($dir)) {
