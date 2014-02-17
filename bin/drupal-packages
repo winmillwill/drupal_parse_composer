@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+
+use Drupal\ParseComposer\Application;
+
+require __DIR__.'/../bootstrap.php';
+
+$application = new Application();
+$application->run();

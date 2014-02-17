@@ -1,0 +1,43 @@
+{
+    "name": "drupal/parse-composer",
+    "description": "Packagist for Drupal projects",
+    "keywords": ["drupal", "composer", "packagist"],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Daniel Espendiller",
+            "homepage": "http://espend.de"
+        },
+        {
+            "name": "Will Milton"
+        }
+    ],
+    "repositories": [
+      {
+        "type": "package",
+        "package": {
+          "name": "drupal/drupal",
+          "version": "7.26.0",
+          "dist": {
+            "url": "http://ftp.drupal.org/files/projects/drupal-7.26.tar.gz",
+            "type": "tar"
+          },
+          "autoload": {
+            "files": ["includes/bootstrap.inc"]
+          }
+        }
+      }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "drupal/drupal": "7.*",
+        "composer/composer": "*",
+        "symfony/finder": "*",
+        "symfony/filesystem": "*",
+        "guzzle/guzzle": "*"
+    },
+    "autoload": {
+        "psr-4": { "Drupal\\ParseComposer\\": "src/" }
+    }
+}
