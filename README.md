@@ -15,13 +15,13 @@ Use
 
 after install, you can do something like this:
 
-`vendor/bin/drupal-packages views features panels strongarm`
+`bin/drupal-packages views features panels strongarm`
 
 and you will get composer package json for the drupal 7 versions of all those, as well as drupal core itself.
 
 You can specify versions like so:
 
-`vendor/bin/drupal-packages views:6,7,8 features:6,7 panels strongarm`
+`bin/drupal-packages views:6,7,8 features:6,7 panels strongarm`
 
 Note that `project:7` is equivalent to `project`. Also, right now we don't do any recovery if the update xml isn't found in the normal place, so it will just crash if one of the projects doesn't have releases for the given versions.
 
